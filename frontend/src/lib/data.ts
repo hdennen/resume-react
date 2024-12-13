@@ -6,7 +6,7 @@ export const projects: Project[] = [
     id: 'compass',
     title: 'Report Generator',
     description: 'Generates reports based on CSV data',
-    image: 'public/chart.png',
+    image: '/chart.png',
     tags: ['React', 'CSV Parse', 'ETL', 'ReCharts'],
     githubUrl: 'https://github.com/hdennen/compass-reports',
     featured: true
