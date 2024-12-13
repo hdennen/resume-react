@@ -1,5 +1,5 @@
 import { Project, Experience, TechnologyCategory, Achievement } from './types';
-import { Code2, Database, Layout, Server, Award, BookOpen, Users, Target, Zap, Globe, Cloud, ClipboardList, SearchCode, Workflow, ShieldCheck } from 'lucide-react';
+import { Code2, Database, Layout, Server, Award, Users, Target, Zap, Globe, ClipboardList, SearchCode, Workflow, ShieldCheck } from 'lucide-react';
 
 export const projects: Project[] = [
   {  

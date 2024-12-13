@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { technologies } from '@/lib/data';
+import { ElementType } from 'react';
 
 const container = {
   hidden: { opacity: 0 },
@@ -17,6 +18,12 @@ const item = {
   show: { opacity: 1, y: 0 },
 };
 
+interface Technology {
+  title: string;
+  icon: ElementType;
+  skills: string[];
+}
+
 export function TechStack() {
   return (
     <motion.div
@@ -25,7 +32,7 @@ export function TechStack() {
       animate="show"
       className="grid grid-cols-1 md:grid-cols-2 gap-6"
     >
-      {technologies.map((tech) => (
+      {technologies.map((tech: Technology) => (
         <motion.div key={tech.title} variants={item}>
           <Card>
             <CardHeader className="flex flex-row items-center space-x-4">

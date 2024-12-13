@@ -1,6 +1,12 @@
 import { motion } from 'framer-motion';
 import { achievements } from '@/lib/data';
 
+interface Achievement {
+  title: string;
+  description: string;
+  icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
+}
+
 export function Profile() {
   return (
     <div className="space-y-8">
@@ -22,7 +28,7 @@ export function Profile() {
         transition={{ delay: 0.2 }}
         className="grid grid-cols-1 md:grid-cols-3 gap-6"
       >
-        {achievements.slice(0, 3).map((achievement, index) => (
+        {(achievements as Achievement[]).slice(0, 3).map((achievement, index) => (
           <motion.div
             key={achievement.title}
             initial={{ opacity: 0, y: 20 }}
