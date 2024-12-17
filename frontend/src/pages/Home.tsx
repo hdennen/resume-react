@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ArrowRight, Github, Linkedin, Twitter } from 'lucide-react';
+import { FaArrowRight, FaGithub, FaLinkedin, FaMedium } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { ROUTES, SOCIAL_LINKS } from '@/lib/constants';
@@ -25,7 +25,7 @@ export function Home() {
           <div className="mt-10 flex gap-4">
             <Button asChild>
               <Link to={ROUTES.PROJECTS}>
-                View Projects <ArrowRight className="ml-2 h-4 w-4" />
+                View Projects <FaArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
             <Button variant="outline" asChild>
@@ -40,7 +40,7 @@ export function Home() {
                 rel="noopener noreferrer"
                 aria-label="GitHub"
               >
-                <Github className="h-5 w-5" />
+                <FaGithub className="h-5 w-5" />
               </a>
             </Button>
             <Button variant="ghost" size="icon" asChild>
@@ -50,17 +50,18 @@ export function Home() {
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
               >
-                <Linkedin className="h-5 w-5" />
+                <FaLinkedin className="h-5 w-5" />
               </a>
             </Button>
+            
             <Button variant="ghost" size="icon" asChild>
               <a
-                href={SOCIAL_LINKS.TWITTER}
+                href={SOCIAL_LINKS.MEDIUM}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Twitter"
+                aria-label="Medium"
               >
-                <Twitter className="h-5 w-5" />
+                <FaMedium className="h-5 w-5" />
               </a>
             </Button>
           </div>
