@@ -1,8 +1,9 @@
 {
-  "rewrites": [
-    {
-      "source": "/((?!api/.*).*)",
-      "destination": "/index.html"
-    }
+  "routes": [
+    { "src": "/home", "dest": "/" },
+    { "src": "/about", "dest": "/" },
+    { "src": "/projects", "dest": "/" },
+    { "src": "/contact", "dest": "/" },
+    { "src": "/experience", "dest": "/" }
   ]
 }
