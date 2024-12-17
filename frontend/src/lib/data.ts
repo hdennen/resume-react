@@ -22,11 +22,11 @@ export const experiences: Experience[] = [
     period: '10/2023 - 09/2024',
     achievements: [
       'Built and led a team of 6 engineers in 3 months, accelerating project delivery by 3 months',
-      'Managed critical path execution across four teams through efficient design sessions and code reviews',
+      'Led design sessions and code reviews to ensure critical path execution across four teams',
       'Hired 20 engineers across 3 teams, fostering a culture of global remote collaboration',
       'Developed cross-timezone collaboration strategy for 24-hour development cycles'
     ],
-    technologies: ['C#', '.NET', 'TypeScript', 'JavaScript', 'PowerShell', 'YAML', 'Docker', 'Playwright', 'Azure DevOps', 'CoPilot']
+    technologies: ['TypeScript', 'JavaScript', 'C#', '.NET', 'PowerShell', 'YAML', 'Docker', 'Playwright', 'Azure DevOps', 'CoPilot']
   },
   {
     id: 'derivco-staff',
@@ -40,7 +40,7 @@ export const experiences: Experience[] = [
       'Established effective interview process for identifying top talent',
       'Successfully onboarded two teams to effective contribution within weeks'
     ],
-    technologies: ['C#', '.NET', 'TypeScript', 'JavaScript', 'PowerShell', 'YAML', 'Docker', 'Playwright', 'Azure DevOps', 'CoPilot']
+    technologies: ['C#', '.NET', 'TypeScript', 'JavaScript', 'NUnit', 'PowerShell', 'YAML', 'Docker', 'Cypress', 'Azure DevOps', 'CoPilot']
   },
   {
     id: 'derivco-senior',
@@ -49,12 +49,12 @@ export const experiences: Experience[] = [
     companyUrl: 'https://www.linkedin.com/company/derivco/about/',
     period: '11/2018 - 06/2022',
     achievements: [
-      'Developed regulatory compliance API for runtime selection of compliant logic',
+      'Designed and developed regulatory compliance API for runtime selection of compliant logic',
       'Led 6-person team to deliver Atom project for entity graph representation',
       'Reduced development time by 90% through node-agnostic program model',
       'Implemented full-stack solution for synchronized game-end experience'
     ],
-    technologies: ['C#', '.NET', 'TypeScript', 'PowerShell', 'YAML', 'Docker', 'Playwright', 'Azure DevOps', 'Git']
+    technologies: ['C#', '.NET', 'TypeScript', 'Vue', 'SQL', 'SQL Graph', 'XUnit', 'PowerShell', 'YAML', 'Docker', 'Playwright', 'Azure DevOps', 'Git']
   },
   {
     id: 'derivco-engineer',
@@ -67,7 +67,7 @@ export const experiences: Experience[] = [
       'Reduced live incidents by 50% through improved state management',
       'Optimized performance through RAF calls and memory management'
     ],
-    technologies: ['TypeScript', 'JavaScript', 'Gulp', 'Webpack', 'Selenium', 'Team City', 'Git']
+    technologies: ['TypeScript', 'JavaScript', 'Angular', 'Gulp', 'Webpack', 'Selenium', 'Team City', 'Git']
   },
   {
     id: 'freelance',
@@ -79,7 +79,7 @@ export const experiences: Experience[] = [
       'Developed diverse portfolio including project management, scheduling, and tracking applications',
       'Built prototype for WoahStork marijuana dispensary network'
     ],
-    technologies: ['Drupal', 'SQL', 'PHP', 'JavaScript', 'jQuery', 'CSS', 'HTML']
+    technologies: ['Drupal', 'SQL', 'PHP', 'JavaScript', 'jQuery', 'CSS', 'HTML', 'Linux', 'Debian']
   }
 ];
 
