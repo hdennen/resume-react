@@ -5,8 +5,14 @@ import { About } from '@/pages/About';
 import { Projects } from '@/pages/Projects';
 import { Experience } from '@/pages/Experience';
 import { Contact } from '@/pages/Contact';
+import { initGA, logPageView } from './utils/analytics';
+import { useEffect } from 'react';
 
 export function App() {
+  useEffect(() => {
+    initGA(import.meta.env.VITE_GA4_MEASUREMENT_ID);
+    logPageView();
+  }, []);
   return (
     <BrowserRouter>
       <Layout>
