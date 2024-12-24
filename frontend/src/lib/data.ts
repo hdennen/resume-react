@@ -117,7 +117,7 @@ export const technologies: TechnologyCategory[] = [
   {
     title: 'Project Management',
     icon: ClipboardList,
-    skills: ['Git', 'GitHub', 'GitLab', 'Azure DevOps', 'Jira', 'Trello', 'Asana', 'Slack', 'Confluence', 'Git', 'GitHub', 'GitLab', 'Azure DevOps', 'Jira', 'Trello', 'Asana', 'MS Teams', 'Confluence'],
+    skills: ['Git', 'GitHub', 'GitLab', 'Azure DevOps', 'Jira', 'Trello', 'Asana', 'Slack', 'Confluence', 'Git', 'GitHub', 'GitLab', 'Azure DevOps', 'Jira', 'Trello', 'MS Teams'],
   },
   {
     title: 'Troubleshooting & Debugging',

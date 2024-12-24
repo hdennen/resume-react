@@ -3,6 +3,7 @@ import { FaArrowRight, FaGithub, FaLinkedin, FaMedium } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { ROUTES, SOCIAL_LINKS } from '@/lib/constants';
+import { trackLinkClick } from '@/utils/analytics';
 
 export function Home() {
   return (
@@ -29,7 +30,7 @@ export function Home() {
               </Link>
             </Button>
             <Button variant="outline" asChild>
-              <Link to={ROUTES.CONTACT}>Get in Touch</Link>
+              <Link to={ROUTES.CONTACT} onClick={() => trackLinkClick('Get in Touch', ROUTES.CONTACT, false)}>Get in Touch</Link>
             </Button>
           </div>
           <div className="mt-10 flex gap-4">
@@ -39,6 +40,7 @@ export function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
+                onClick={() => trackLinkClick('GitHub Profile', SOCIAL_LINKS.GITHUB, true)}
               >
                 <FaGithub className="h-5 w-5" />
               </a>
@@ -49,6 +51,7 @@ export function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
+                onClick={() => trackLinkClick('LinkedIn Profile', SOCIAL_LINKS.LINKEDIN, true)}
               >
                 <FaLinkedin className="h-5 w-5" />
               </a>
@@ -60,6 +63,7 @@ export function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Medium"
+                onClick={() => trackLinkClick('Medium Profile', SOCIAL_LINKS.MEDIUM, true)}
               >
                 <FaMedium className="h-5 w-5" />
               </a>
