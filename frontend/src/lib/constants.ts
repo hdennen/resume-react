@@ -10,5 +10,5 @@ export const SOCIAL_LINKS = {
   GITHUB: 'https://github.com/hdennen',
   LINKEDIN: 'https://www.linkedin.com/in/hdennen/',
   TWITTER: 'https://twitter.com',
-  MEDIUM: 'https://medium.com/@hazterisk',
+  MEDIUM: 'https://medium.com/@hdennen',
 } as const;
