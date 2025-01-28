@@ -4,6 +4,7 @@ import { Copy, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { decodeEmail } from '@/lib/utils';
 import { useToast } from '@/hooks/use-toast';
+import { trackButtonClick } from '@/utils/analytics';
 
 export function Contact() {
   const { toast } = useToast();
@@ -43,17 +44,23 @@ export function Contact() {
                 <Button
                   variant="ghost"
                   size="icon"
-                  onClick={handleCopyEmail}
+                  onClick={() => {
+                    handleCopyEmail();
+                    trackButtonClick('Copy Email', 'Contact');
+                  }}
                   className="hover:text-primary"
                 >
-                  <Copy className="h-5 w-5" />
+                  <Copy className="h-5 w-5 text-gray-500 hover:text-primary" />
                 </Button>
               </div>
             ) : (
               <Button
                 variant="outline"
                 size="lg"
-                onClick={handleRevealEmail}
+                onClick={() => {
+                  handleRevealEmail();
+                  trackButtonClick('Reveal Email', 'Contact');
+                }}
                 className="text-lg"
               >
                 <Mail className="mr-2 h-5 w-5" />
