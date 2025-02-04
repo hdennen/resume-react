@@ -16,7 +16,7 @@ export function Profile() {
         className="prose prose-neutral dark:prose-invert max-w-none"
       >
         <p className="text-xl text-muted-foreground">
-          As a Technical Leader with over 14 years of experience, I specialize in building
+          As a Technical Leader with over a decade of experience, I specialize in building
           scalable applications and leading high-performance development teams. My approach
           combines technical expertise with strategic thinking to deliver exceptional results.
         </p>

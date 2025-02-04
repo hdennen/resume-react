@@ -16,7 +16,7 @@ export const projects: Project[] = [
 export const experiences: Experience[] = [
   {
     id: 'derivco-manager',
-    role: 'Software Engineering Manager',
+    role: 'Software Engineering Lead',
     company: 'Derivco',
     companyUrl: 'https://www.linkedin.com/company/derivco/about/',
     period: '10/2023 - 09/2024',
@@ -30,7 +30,7 @@ export const experiences: Experience[] = [
   },
   {
     id: 'derivco-staff',
-    role: 'Staff Software Engineer',
+    role: 'Senior Software Engineer L2',
     company: 'Derivco',
     companyUrl: 'https://www.linkedin.com/company/derivco/about/',
     period: '06/2022 - 10/2023',
